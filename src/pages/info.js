@@ -56,8 +56,8 @@ class Notifications extends React.Component {
                 </div>
                 <div className="container">
                     <div className="px-3">
-                        {this.state.todos.map(todo =>
-                            <div className="card card-shadow mb-3" style={{ cursor: "pointer", color:`#${todo.color}` }} >
+                        {this.state.todos.map((todo, id) =>
+                            <div key={id} className="card card-shadow mb-3" style={{ cursor: "pointer", color:`#${todo.color}` }} >
                                 <div className="card-body">
                                     <li className="card-text fw-bold">{todo.code}</li>
 

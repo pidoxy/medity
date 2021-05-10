@@ -5,9 +5,9 @@ import { BottomNavigation } from '@progress/kendo-react-layout';
 
 
 const items = [
-    { text: 'Inbox', id: 1, icon: `inbox`, route: '/', selected: true },
-    { text: 'Calendar', id: 2, icon: 'calendar', route: '/calendar' },
-    { text: 'Calenda', id: 3, icon: 'cogs', route: '/calendr' },
+    { text: 'General', id: 1, icon: `inbox`, route: '/', selected: true },
+    { text: 'News', id: 2, icon: 'calendar', route: '/news' },
+    { text: 'Info', id: 3, icon: 'cogs', route: '/calendr' },
     { text: 'Profile', id: 4, icon: 'user', route: '/profile' }
 ];
 
