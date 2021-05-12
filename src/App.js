@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@progress/kendo-theme-bootstrap/dist/all.css';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import Home from "./pages/home";
+import HomeDesk from "./pages/homeDesk";
 import News from "./pages/news";
 import Info from "./pages/info";
 import NewsPage from "./pages/newsPage";
@@ -81,11 +82,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App py-3">
+      <div className="App py-md-5 py-3" >
         <HashRouter>
           <BottomNav>
             <Switch>
-              <Route exact={true} path="/" component={Home} />
+              <Route exact={true} path="/" component={HomeDesk} />
+              {/* <Route exact={true} path="/" component={Home} />   */}
               <Route exact={true} path="/news" component={News} />
               <Route exact={true} path="/calendr" component={Info} />
               <Route exact={true} path="/profile" component={NewsPage} />
