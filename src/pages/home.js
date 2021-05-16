@@ -7,7 +7,6 @@ import vaccine from "../images/vaccine.svg";
 // import { Input } from '@progress/kendo-react-inputs';
 import ChartContainer from "../components/chart";
 import { Link } from "react-router-dom";
-import axios from 'axios';
 
 
 

@@ -1,30 +1,35 @@
 import * as React from 'react';
-import { AppBar, AppBarSection, AppBarSpacer, Avatar } from '@progress/kendo-react-layout';
+import { AppBar, AppBarSection, AppBarSpacer } from '@progress/kendo-react-layout';
 // import { Badge, BadgeContainer } from '@progress/kendo-react-indicators';
+import { Link } from 'react-router-dom';
 
-// let kendokaAvatar = 'https://www.telerik.com/kendo-react-ui-develop/images/kendoka-react.png';
+
+const items = [
+    { text: 'HOME', id: 1, route: '/' },
+    { text: 'FEATURES', id: 2, route: '/features' },
+    { text: 'TEAM', id: 3, route: '/team' },
+    { text: 'CONTACT US', id: 4, route: '/contact-us' }
+];
 
 const TopNav = () => {
     return (<>
-        <AppBar positionMode={'fixed'} className="d-md-flex py-3 d-none">
+        <AppBar positionMode={'fixed'} className="d-md-flex container-fluid py-3 d-none">
             <AppBarSpacer style={{
                 width: 40
             }} />
 
             <AppBarSection >
-                <h3 style={{color:'white'}} className="title">Medity(app logo)</h3>
+                <h3 style={{ color: 'white' }} className="title">Medity(app logo)</h3>
             </AppBarSection>
             <AppBarSpacer />
             {/* <AppBarSpacer /> */}
 
             <AppBarSection className="ms-auto">
-                <ul>
-                    <li className="px-5" id="#home"><span>HOME</span></li>
-                    <li className="px-5" id="#features"><span>FEATURES</span></li>
-                    <li className="px-5" id="#team"><span>TEAM</span></li>
-                    <li className="px-5" id="#contactUs"><span>CONTACT US</span></li>
-
-                </ul>
+                {items.map((item, id) =>
+                    // <ul>
+                    <li key={id} className="px-5" id="#home"><span><Link key={item.id} to={item.route} >{item.text}</Link></span></li>
+                    // </ul>
+                )}
             </AppBarSection>
             <AppBarSpacer style={{
                 width: 40

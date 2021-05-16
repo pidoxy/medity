@@ -1,6 +1,6 @@
 import * as React from 'react';
 import l_arrow from "../images/left-arrow.svg";
-import news1 from "../images/news1.svg";
+    import news1 from "../images/news1.svg";
 // import { Card, CardTitle, CardBody, CardActions } from '@progress/kendo-react-layout';
 // import history from './history';
 // import OwlCarousel from 'react-owl-carousel';
