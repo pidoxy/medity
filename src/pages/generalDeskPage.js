@@ -24,7 +24,7 @@ class Home extends Component {
     render() {
 
         return (
-            <div id="#features" className="App mt-3 ">
+            <div id="#features" className="App mt-3 d-md-block d-none">
                 <TopNav />
                 <div >
                     <div style={{ backgroundColor: `${this.props.blocks[1].color}` }} className="py-3 mt-5 px-5 text-center" >

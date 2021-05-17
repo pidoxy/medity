@@ -27,7 +27,7 @@ class BottomNav extends React.Component {
         let selected = this.setSelectedItem(this.props.location.pathname);
 
         return (
-          <div className={'example-wrapper'}>
+          <div className={'example-wrapper d-md-none'} >
             <div className={'page'}>
               <div className={'content'}>
 

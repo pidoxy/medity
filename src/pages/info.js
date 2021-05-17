@@ -49,7 +49,7 @@ class Notifications extends React.Component {
     render() {
 
         return (
-            <div className="notification py-3">
+            <div className="notification py-3 d-md-none">
                 <div className="container pt-3 pb-5">
                     <h1 className="text-center fw-bolder pb-2">General Information</h1>
                     <p className="text-center">Click to learn more about symptoms, prevention, and treatments for the following diseases.</p>

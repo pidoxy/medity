@@ -79,7 +79,7 @@ class Notifications extends React.Component {
       )
     }
     return (
-      <div className="notification pb-5">
+      <div className="notification pb-5 d-md-none">
         <div className="container">
           <div className="px-3 pb-3 d-flex ">
             {/* <img className="pe-3" src={l_arrow} alt="previous page navigation" />*/}

@@ -22,12 +22,12 @@ const TopNav = () => {
                 <h3 style={{ color: 'white' }} className="title">Medity(app logo)</h3>
             </AppBarSection>
             <AppBarSpacer />
-            {/* <AppBarSpacer /> */}
+            <AppBarSpacer />
 
             <AppBarSection className="ms-auto">
                 {items.map((item, id) =>
                     // <ul>
-                    <li key={id} className="px-5" id="#home"><span><Link key={item.id} to={item.route} >{item.text}</Link></span></li>
+                    <li key={id} className="px-2 px-lg-4" id="#home"><span><Link key={item.id} to={item.route} >{item.text}</Link></span></li>
                     // </ul>
                 )}
             </AppBarSection>

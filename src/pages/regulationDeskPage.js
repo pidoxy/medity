@@ -23,7 +23,7 @@ class Home extends Component {
     render() {
 
         return (
-            <div id="#features" className="App mt-3 ">
+            <div id="#features" className="App mt-3 d-md-block d-none">
                 <TopNav />
                 <div >
                     <div style={{ backgroundColor: `${this.props.blocks[2].color}` }} className="py-3 mt-5 px-5 text-center" >
@@ -37,9 +37,9 @@ class Home extends Component {
                 <div className="px-3 py-4">
 
                     <div className="row ">
-                        <div className="col-3">
+                        <div className="col-3 py-2">
                             <div className="container articles">
-                                {this.props.general.map((todo, id) =>
+                                {this.props.regulators.map((todo, id) =>
                                     <div onClick={() => {
                                         if (id === 0) {
                                             this.setState({ section0Clicked: true });
@@ -69,7 +69,7 @@ class Home extends Component {
                                             // this.state.section3Clicked ? this.setState({backgroundColor: '#E5E5E5'})  : this.setState({backgroundColor: 'white'}) 
                                         }
                                        
-                                    }} key={id} id={id} className="my-3" style={{ backgroundColor : `${this.state.backgroundColor}`, cursor: "pointer", color: `#${todo.color}` }} >
+                                    }} key={id} id={id} className="my-5" style={{ backgroundColor : `${this.state.backgroundColor}`, cursor: "pointer", color: `#${todo.color}` }} >
                                         <div className="">
                                             <h4 className="mb-0 py-3 px-2 text-center fw-bold">{todo.code}</h4>
                                         </div>

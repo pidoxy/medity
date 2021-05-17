@@ -8,7 +8,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div id="#features" className="App pt-5">
+            <div id="#features" className="App pt-5 d-md-block d-none">
                 <TopNav />
                 <div className="container pt-5 px-4 text-center ">
                     <h1 className="px-5 f-3">Taking data and info to the uttermost<br /> parts of the globe</h1>

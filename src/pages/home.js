@@ -16,7 +16,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="App ">
+            <div className="App d-md-none">
                 <div className="container ">
                     <div className="px-3 d-flex justify-content-between">
                         <h1 className="fw-bolder">Hey there!</h1>
