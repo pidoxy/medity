@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 // import { Card, CardTitle, CardBody, CardActions } from '@progress/kendo-react-layout';
 // import history from './history';
 
@@ -9,7 +10,7 @@ class Notifications extends React.Component {
         super(props)
 
         this.state = {
-            
+
         }
 
 
@@ -26,16 +27,19 @@ class Notifications extends React.Component {
                 <div className="container">
                     <div className="px-3">
                         {this.props.general.map((todo, id) =>
-                            <div key={id} className="card card-shadow mb-3" style={{ cursor: "pointer", color:`#${todo.color}` }} >
+
+                            <div key={id} className="card card-shadow mb-3" style={{ cursor: "pointer", color: `#${todo.color}` }} >
+                                <Link key={id} to={todo.route}>
                                 <div className="card-body">
                                     <li className="card-text fw-bold">{todo.code}</li>
 
                                 </div>
+                                </Link>
                             </div>
                         )}
                     </div>
-                </div>
             </div>
+            </div >
         )
     }
 }

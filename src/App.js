@@ -6,9 +6,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Mobile
 import Home from "./pages/home";
 import News from "./pages/news";
-// import Info from "./pages/info";
-// import Covid from "./components/covid";
+import Info from "./pages/info";
+import Covid from "./components/covid";
 import Influenza from "./components/influenza";
+import Ebola from "./components/ebola";
+import Cholera from "./components/cholera";
+import Sars from "./components/sars";
 import NewsPage from "./pages/newsPage";
 import NewsPage2 from "./pages/newsPage2";
 import NewsPage3 from "./pages/newsPage3";
@@ -109,26 +112,31 @@ class App extends Component {
         {
           code: 'COVID-19 ',
           color: "FF304F",
+          route: "/covid19"
 
         },
         {
           code: 'Influenza',
           color: "39BDC8",
+          route: "/influenza"
 
         },
         {
           code: 'Ebola',
           color: "0085AD",
+          route: "/ebola"
 
         },
         {
           code: 'Cholera',
           color: "775ADA",
+          route: "/cholera"
 
         },
         {
           code: 'SARS',
           color: "FF304F",
+          route: "/sars"
 
         }
       ],
@@ -244,7 +252,7 @@ class App extends Component {
             text: "nausea or vomiting"
           },
         ]
-      
+
       },
       influenza: {
 
@@ -517,6 +525,98 @@ class App extends Component {
           },
         ]
 
+      },
+      sars: {
+
+        symptoms: [
+          {
+            text: "fever or chills"
+          },
+          {
+            text: "cough"
+          },
+          {
+            text: "shortness of breath or difficulty breathing"
+          },
+          {
+            text: "fatigue"
+          },
+          {
+            text: "muscle or body aches"
+          },
+          {
+            text: "headache"
+          },
+          {
+            text: "new loss of taste or smell"
+          },
+          {
+            text: "sore throat"
+          },
+          {
+            text: "congestion or runny nose"
+          },
+          {
+            text: "nausea or vomiting"
+          },
+          {
+            text: "diarrhea"
+          },
+        ]
+        ,
+
+        prevention: [
+          {
+            text: "wear a mask with no gaps"
+          },
+          {
+            text: "stay at least 6 feet from others"
+          },
+          {
+            text: "avoid crowds and poorly ventilated spaces"
+          },
+          {
+            text: "get a vaccine"
+          },
+          {
+            text: "clean your hands often"
+          },
+          {
+            text: "use soap and water for 20 seconds"
+          },
+          {
+            text: "or use hand sanitizer with 60% alcohol or more"
+          },
+          {
+            text: "clean and disinfect frequently touched objects and surfaces daily"
+          },
+          {
+            text: "congestion or runny nose"
+          },
+          {
+            text: "nausea or vomiting"
+          },
+          {
+            text: "diarrhea"
+          },
+        ]
+        ,
+
+        treatments: [
+          {
+            text: "stay home and away from others except to get medical care"
+          },
+          {
+            text: "take acetaminophen or ibuprofen to feel better and reduce fever"
+          },
+          {
+            text: "notify your health care provider when scheduling an appointment"
+          },
+          {
+            text: "nausea or vomiting"
+          },
+        ]
+
       }
 
 
@@ -536,11 +636,25 @@ class App extends Component {
           )} />
 
           <Route exact={true} path="/features/general" render={() => (
-            // <Info influenza={this.state.influenza} ebola={this.state.ebola} cholera={this.state.cholera} covid19={this.state.covid19} general={this.state.general} articles={this.state.articles} blocks={this.state.blocks} />
-            // <Covid cholera={this.state.cholera} covid19={this.state.covid19} general={this.state.general} />
-            <Influenza influenza={this.state.influenza} covid19={this.state.covid19} general={this.state.general} />
+            <Info general={this.state.general} articles={this.state.articles} />
 
           )} />
+          <Route exact={true} path="/covid19" render={() => (
+            <Covid covid19={this.state.covid19} />
+          )} />
+          <Route exact={true} path="/influenza" render={() => (
+            <Influenza influenza={this.state.influenza} />
+          )} />
+          <Route exact={true} path="/cholera" render={() => (
+            <Cholera cholera={this.state.cholera} />
+          )} />
+          <Route exact={true} path="/ebola" render={() => (
+            <Ebola ebola={this.state.ebola} />
+          )} />
+          <Route exact={true} path="/sars" render={() => (
+          <Sars sars={this.state.sars} />
+          )} />
+
           <Route exact={true} path="/profile" component={NewsPage} />
           <Route exact={true} path="/notification" component={Notification} />
           <Route exact={true} path="/article1" component={NewsPage} />

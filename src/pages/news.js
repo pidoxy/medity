@@ -76,7 +76,6 @@ class Notifications extends React.Component {
       <div className="notification pb-5 d-md-none">
         <div className="container">
           <div className="px-3 pb-3 d-flex ">
-            {/* <img className="pe-3" src={l_arrow} alt="previous page navigation" />*/}
             <BackImg />
             <h1 className="fw-bolder px-3">News</h1>
           </div>
