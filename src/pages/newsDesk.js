@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import { Input } from '@progress/kendo-react-inputs';
 import TopNav from "../components/topNav";
+import { Link } from 'react-router-dom';
 
 
 
@@ -17,10 +18,14 @@ class Home extends Component {
                 </div>
                 <div className="px-3 py-3">
                     <div className="row">
-                        {this.props.blocks.map((items, id) => <div style={{backgroundColor:`${items.color}`, fontSize: `1.5rem`}} className="py-3 px-2 col-4 text-center" key={id}>
-                            <h1 className="py-5" style={{color:'white'}}>{items.title}</h1>
-                            <p className="py-5" style={{fontSize:'20px'}}>{items.text}</p>
-                            </div>)}
+                        {this.props.blocks.map((items, id) =>
+                            <div style={{ backgroundColor: `${items.color}`, fontSize: `1.5rem` }} className="py-3 px-2 col-4 text-center" key={id}>
+                                <Link key={id} to={items.route}>
+                                    <h1 className="py-5" style={{ color: 'white' }}>{items.title}</h1>
+                                    <p className="py-5" style={{ fontSize: '20px' }}>{items.text}</p>
+                                </Link>
+                            </div>
+                        )}
                     </div>
                 </div>
 

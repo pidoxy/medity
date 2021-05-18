@@ -1,11 +1,11 @@
 import * as React from 'react';
-import l_arrow from "../images/left-arrow.svg";
 // import { Card, CardTitle, CardBody, CardActions } from '@progress/kendo-react-layout';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import NewsPage from "./newsPage";
+import BackImg from '../components/backImg';
 
 
 class Notifications extends React.Component {
@@ -71,19 +71,13 @@ class Notifications extends React.Component {
   }
 
   render() {
-    const Img = () => {
-      let history = useHistory();
 
-      return (
-        <img onClick={history.goBack} src={l_arrow} alt="previous page navigation" />
-      )
-    }
     return (
       <div className="notification pb-5 d-md-none">
         <div className="container">
           <div className="px-3 pb-3 d-flex ">
             {/* <img className="pe-3" src={l_arrow} alt="previous page navigation" />*/}
-            <Img />
+            <BackImg />
             <h1 className="fw-bolder px-3">News</h1>
           </div>
         </div>
@@ -91,10 +85,10 @@ class Notifications extends React.Component {
           <div className="px-3">
             <h5 className="fw-bolder py-3">Popular</h5>
             <OwlCarousel className='owl-theme py-3' autoplay loop margin={10} items={2.5} dots={false} >
-              {this.state.articles.map((items, id) =>
+              {this.props.articles.map((items, id) =>
                 <div key={id} className='item'>
                   <img src={items.img} alt={items.title} />
-                  <p style={{ color: '#FF304F', fontSize: '10px' }} className="pt-3 red">{items.title}</p>
+                  <p style={{ color: '#FF304F', fontSize: '10px' }} className="pt-3 red">{items.text}</p>
                 </div>)}
             </OwlCarousel>
             <div className="">
@@ -103,7 +97,7 @@ class Notifications extends React.Component {
           </div>
           <div className="px-3">
             <h5 className="fw-bolder">Recent Articles</h5>
-            {this.state.articles.map((items, id) =>
+            {this.props.articles.map((items, id) =>
               <Link key={id} to={items.link}><div style={{ cursor: "pointer" }} className="row py-3">
                 <div key={id} className="col-5"> <img style={{ width: "100%" }} src={items.img} alt={items.title} /></div>
                 <div className="col-7">

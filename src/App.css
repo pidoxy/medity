@@ -46,10 +46,10 @@ a {
   text-decoration: none !important;
   color: inherit !important;
 }
-a:active, a:hover{
+/* a:active, a:hover{
   color: white !important;
 
-}
+} */
 .black{
   color: #000000 !important;
 }

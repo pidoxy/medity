@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { AppBar, AppBarSection, AppBarSpacer } from '@progress/kendo-react-layout';
 // import { Badge, BadgeContainer } from '@progress/kendo-react-indicators';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const items = [
@@ -27,7 +27,12 @@ const TopNav = () => {
             <AppBarSection className="ms-auto">
                 {items.map((item, id) =>
                     // <ul>
-                    <li key={id} className="px-2 px-lg-4" id="#home"><span><Link key={item.id} to={item.route} >{item.text}</Link></span></li>
+                    <li className="px-2 px-lg-4 topnav-links" key={id} ><span><NavLink key={item.id} to={item.route} >{item.text}</NavLink></span></li>
+                    //     <li className="px-2 px-lg-4" id="#home"><span>HOME</span></li>
+                    //     <li className="px-2 px-lg-4" id="#home"><span>FEATURES</span></li>
+                    //     <li className="px-2 px-lg-4" id="#home"><span>TEAM</span></li>
+                    //     <li className="px-2 px-lg-4" id="#home"><span>CONTACT US</span></li>
+
                     // </ul>
                 )}
             </AppBarSection>
@@ -51,9 +56,13 @@ const TopNav = () => {
                 li {
                     margin: 0 10px;
                 }
-                li:hover {
+                // li:hover {
+                //     cursor: pointer;
+                //     color: white;
+                // }
+                .topnav-links:hover, .topnav-links:active{
                     cursor: pointer;
-                    color: white;
+                       color: white;
                 }
                 .k-button {
                     padding: 0;

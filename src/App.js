@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@progress/kendo-theme-bootstrap/dist/all.css';
-import { HashRouter, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Mobile
 import Home from "./pages/home";
 import News from "./pages/news";
-import Info from "./pages/info";
+// import Info from "./pages/info";
+// import Covid from "./components/covid";
+import Influenza from "./components/influenza";
 import NewsPage from "./pages/newsPage";
 import NewsPage2 from "./pages/newsPage2";
 import NewsPage3 from "./pages/newsPage3";
@@ -88,7 +90,7 @@ class App extends Component {
           title: 'Recent News',
           text: "Get the latest news updates on current outbreaks.",
           color: "#FF304F",
-          link: '/features/news'
+          route: '/features/news'
         },
         {
           title: 'General Information',
@@ -242,7 +244,7 @@ class App extends Component {
             text: "nausea or vomiting"
           },
         ]
-
+      
       },
       influenza: {
 
@@ -529,16 +531,23 @@ class App extends Component {
         {/* <BottomNav> */}
         <Router >
           <Route exact={true} path="/" component={Home} />
-          <Route exact={true} path="/news" component={News} />
+          <Route exact={true} path="/news" render={() => (
+            <News articles={this.state.articles} />
+          )} />
 
-          <Route exact={true} path="/calendr" component={Info} />
+          <Route exact={true} path="/features/general" render={() => (
+            // <Info influenza={this.state.influenza} ebola={this.state.ebola} cholera={this.state.cholera} covid19={this.state.covid19} general={this.state.general} articles={this.state.articles} blocks={this.state.blocks} />
+            // <Covid cholera={this.state.cholera} covid19={this.state.covid19} general={this.state.general} />
+            <Influenza influenza={this.state.influenza} covid19={this.state.covid19} general={this.state.general} />
+
+          )} />
           <Route exact={true} path="/profile" component={NewsPage} />
           <Route exact={true} path="/notification" component={Notification} />
           <Route exact={true} path="/article1" component={NewsPage} />
           <Route exact={true} path="/article2" component={NewsPage2} />
           <Route exact={true} path="/article3" component={NewsPage3} />
           <Route exact={true} path="/article4" component={NewsPage4} />
-          <BottomNav  />
+          <BottomNav />
         </Router>
 
 

@@ -9,38 +9,7 @@ class Notifications extends React.Component {
         super(props)
 
         this.state = {
-            todos: [
-                {
-                    // id: uuidv4(),
-                    code: 'COVID-19 ',
-                    color:"FF304F",
-
-                },
-                {
-                    // id: uuidv4(),
-                    code: 'Influenza',
-                    color:"39BDC8",
-
-                },
-                {
-                    // id: uuidv4(),
-                    code: 'Ebola',
-                    color:"0085AD",
-
-                },
-                {
-                    // id: uuidv4(),
-                    code: 'Cholera',
-                    color:"775ADA",
-
-                },
-                {
-                    // id: uuidv4(),
-                    code: 'SARS',
-                    color:"FF304F",
-
-                }
-            ]
+            
         }
 
 
@@ -56,7 +25,7 @@ class Notifications extends React.Component {
                 </div>
                 <div className="container">
                     <div className="px-3">
-                        {this.state.todos.map((todo, id) =>
+                        {this.props.general.map((todo, id) =>
                             <div key={id} className="card card-shadow mb-3" style={{ cursor: "pointer", color:`#${todo.color}` }} >
                                 <div className="card-body">
                                     <li className="card-text fw-bold">{todo.code}</li>
