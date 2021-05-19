@@ -4,17 +4,26 @@ import covid from "../images/covid.svg";
 import influenza from "../images/influenza.svg";
 import others from "../images/others.svg";
 import vaccine from "../images/vaccine.svg";
-// import { Input } from '@progress/kendo-react-inputs';
 import ChartContainer from "../components/chart";
-import { Link } from "react-router-dom";
-
-
+import { Link, useHistory } from "react-router-dom";
 
 class Home extends Component {
 
-    
 
     render() {
+        const SearchPush = () => {
+            let history = useHistory();
+
+            
+            return (
+                <form className="d-flex">
+
+                    <input onFocus={() => history.push('/search')} className="mx-3 form-control " type="search" placeholder="Search" aria-label="Search" />
+                </form>
+
+            )
+        }
+
         return (
             <div className="App d-md-none">
                 <div className="container ">
@@ -24,10 +33,8 @@ class Home extends Component {
                     </div>
                     <div className="px-3 py-3">
                         <p>What would you like to know today?</p>
-                        {/* <Input /> */}
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        </form>
+
+                        <SearchPush />
                     </div>
 
                     <ChartContainer />

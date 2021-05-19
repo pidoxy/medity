@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // import history from './history';
 
 
-class Notifications extends React.Component {
+class Info extends React.Component {
 
     constructor(props) {
         super(props)
@@ -44,4 +44,4 @@ class Notifications extends React.Component {
     }
 }
 
-export default Notifications;
+export default Info;

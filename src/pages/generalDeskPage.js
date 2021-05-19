@@ -5,7 +5,7 @@ import TopNav from "../components/topNav";
 
 
 
-class Home extends Component {
+class GeneralDeskPage extends Component {
 
     constructor(props) {
         super(props)
@@ -96,8 +96,8 @@ class Home extends Component {
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#0085AD25', height: '100%' }}>
                                                 <p>Symptoms may appear 2-14 days after exposure</p>
-                                                {this.props.covid19.symptoms.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.covid19.symptoms.map((symptom, id) =>
+                                                    <li key={id}>{symptom.text}</li>
                                                 )}
                                             </div>
                                         </div>
@@ -106,8 +106,8 @@ class Home extends Component {
                                                 <p className="white py-2 mb-0 fw-bolder text-center">Prevention</p>
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#775ADA25', height: '100%' }}>
-                                                {this.props.covid19.prevention.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.covid19.prevention.map((prevention, id) =>
+                                                    <li key={id}>{prevention.text}</li>
                                                 )}
                                             </div>
                                         </div>
@@ -117,8 +117,8 @@ class Home extends Component {
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#FF304F25', height: '100%' }}>
                                                 <p>If you have possible or confirmed COVID-19:</p>
-                                                {this.props.covid19.treatments.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.covid19.treatments.map((treatment, id) =>
+                                                    <li key={id}>{treatment.text}</li>
                                                 )}
                                                 <p>*Treatment products should be <strong>prescribed</strong> by your healthcare provider</p>
                                             </div>
@@ -133,7 +133,7 @@ class Home extends Component {
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#0085AD25', height: '100%' }}>
                                                 <p>Symptoms may appear 2-14 days after exposure</p>
-                                                {this.props.influenza.symptoms.map(symptom =>
+                                                {this.props.influenza.symptoms.map((symptom, id) =>
                                                     <li>{symptom.text}</li>
                                                 )}
                                             </div>
@@ -143,8 +143,8 @@ class Home extends Component {
                                                 <p className="white py-2 mb-0 fw-bolder text-center">Prevention</p>
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#775ADA25', height: '100%' }}>
-                                                {this.props.influenza.prevention.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.influenza.prevention.map((prevention, id) =>
+                                                    <li key={id}>{prevention.text}</li>
                                                 )}
                                             </div>
                                         </div>
@@ -154,8 +154,8 @@ class Home extends Component {
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#FF304F25', height: '100%' }}>
                                                 <p>If you have possible or confirmed COVID-19:</p>
-                                                {this.props.influenza.treatments.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.influenza.treatments.map((treatment, id) =>
+                                                    <li key={id}>{treatment.text}</li>
                                                 )}
                                                 <p>*Treatment consists of fluids and activity modifications</p>
                                             </div>
@@ -170,8 +170,8 @@ class Home extends Component {
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#0085AD25', height: '100%' }}>
                                                 <p>Symptoms may appear 2-14 days after exposure</p>
-                                                {this.props.ebola.symptoms.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.ebola.symptoms.map((symptom, id) =>
+                                                    <li key={id}>{symptom.text}</li>
                                                 )}
                                             </div>
                                         </div>
@@ -180,8 +180,8 @@ class Home extends Component {
                                                 <p className="white py-2 mb-0 fw-bolder text-center">Prevention</p>
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#775ADA25', height: '100%' }}>
-                                                {this.props.ebola.prevention.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.ebola.prevention.map((prevention, id) =>
+                                                    <li key={id}>{prevention.text}</li>
                                                 )}
                                             </div>
                                         </div>
@@ -191,8 +191,8 @@ class Home extends Component {
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#FF304F25', height: '100%' }}>
                                                 <p>If you have possible or confirmed COVID-19:</p>
-                                                {this.props.ebola.treatments.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.ebola.treatments.map((treatment, id) =>
+                                                    <li key={id}>{treatment.text}</li>
                                                 )}
                                                 <p>*Treatment products should be <strong>prescribed</strong> by your healthcare provider</p>
                                             </div>
@@ -206,8 +206,8 @@ class Home extends Component {
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#0085AD25', height: '100%' }}>
                                                 <p>Symptoms may appear 2-14 days after exposure</p>
-                                                {this.props.cholera.symptoms.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.cholera.symptoms.map((symptom, id) =>
+                                                    <li key={id}>{symptom.text}</li>
                                                 )}
                                             </div>
                                         </div>
@@ -216,8 +216,8 @@ class Home extends Component {
                                                 <p className="white py-2 mb-0 fw-bolder text-center">Prevention</p>
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#775ADA25', height: '100%' }}>
-                                                {this.props.cholera.prevention.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.cholera.prevention.map((prevention, id) =>
+                                                    <li key={id}>{prevention.text}</li>
                                                 )}
                                             </div>
                                         </div>
@@ -227,8 +227,8 @@ class Home extends Component {
                                             </div>
                                             <div className="p-3" style={{ backgroundColor: '#FF304F25', height: '100%' }}>
                                                 <p>If you have possible or confirmed COVID-19:</p>
-                                                {this.props.cholera.treatments.map(symptom =>
-                                                    <li>{symptom.text}</li>
+                                                {this.props.cholera.treatments.map((treatment, id) =>
+                                                    <li key={id}>{treatment.text}</li>
                                                 )}
                                                 <p>*Treatment products should be <strong>prescribed</strong> by your healthcare provider</p>
                                             </div>
@@ -244,7 +244,7 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default GeneralDeskPage;
 
 
 

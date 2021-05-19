@@ -4,7 +4,7 @@ import TopNav from "../components/topNav";
 
 
 
-class Home extends Component {
+class Contact extends Component {
 
     render() {
         return (
@@ -16,7 +16,7 @@ class Home extends Component {
                 </div>
                 <div className="px-3 py-3">
                     <div className="row">
-                        {this.props.blocks.map((items, id) => <div style={{backgroundColor:`${items.color}`}} className="py-3 px-5 col-4 text-center" key={id}>
+                        {this.props.blocks.map((items, id) => <div key={id} style={{backgroundColor:`${items.color}`}} className="py-3 px-5 col-4 text-center" >
                             <h1 className="py-5" style={{color:'white'}}>{items.title}</h1>
                             <p className="py-5" style={{fontSize:'20px'}}>{items.text}</p>
                             </div>)}
@@ -30,7 +30,7 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Contact;
 
 
 

@@ -8,67 +8,7 @@ import { Link } from "react-router-dom";
 import BackImg from '../components/backImg';
 
 
-class Notifications extends React.Component {
-
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      articles: [
-        {
-          text: 'Look for These Symptoms in the Months After COVID-19 Recovery',
-          img: "https://live.staticflickr.com/65535/51162301234_8261efc29a_t.jpg",
-          code: 'COVID-19 ',
-          color: "FF304F",
-          link: "/article1"
-        },
-        {
-          text: 'Pharma, US Government Plan for COVID-19 Booster Shots',
-          code: 'Influenza',
-          color: "39BDC8",
-          img: "https://live.staticflickr.com/65535/51160852032_2038f5d532_t.jpg",
-          link: "/article2"
-        },
-        {
-          text: 'J&J COVID-19 Vaccinations Resume After Temporary Shutdowns',
-          img: "https://live.staticflickr.com/65535/51162305254_c4898ab384_t.jpg",
-          code: 'COVID-19 ',
-          color: "FF304F",
-          link: "/article6"
-        },
-        {
-          text: 'Study highlights significant gap in evidence related to effectiveness of portable air filters in reducing COVID-19',
-          code: 'Ebola',
-          color: "0085AD",
-          img: "https://live.staticflickr.com/65535/51162305254_c4898ab384_t.jpg",
-          link: "/article3"
-        },
-        {
-          text: 'Look for These Symptoms in the Months After COVID-19 Recovery',
-          img: "https://live.staticflickr.com/65535/51161478191_7ffc78835e_t.jpg",
-          code: 'SARS ',
-          color: "FF304F",
-          link: "/article7"
-        },
-        {
-          text: 'Here’s Where COVID-19 Cases Are Rising and Falling',
-          code: 'Cholera',
-          color: "775ADA",
-          img: "https://live.staticflickr.com/65535/51161478191_7ffc78835e_t.jpg",
-          link: "/article4"
-        },
-        {
-          text: 'US Health Authorities Ask for Pause in J&J COVID-19 Vaccination',
-          img: "https://live.staticflickr.com/65535/51160852032_2038f5d532_t.jpg",
-          code: 'COVID-19 ',
-          color: "FF304F",
-          link: "/article5"
-        },
-      ]
-    }
-
-
-  }
+class News extends React.Component {
 
   render() {
 
@@ -112,4 +52,4 @@ class Notifications extends React.Component {
   }
 }
 
-export default Notifications;
+export default News;

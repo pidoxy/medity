@@ -18,6 +18,7 @@ import NewsPage3 from "./pages/newsPage3";
 import NewsPage4 from "./pages/newsPage4";
 import Notification from "./components/notifications";
 import BottomNav from './components/bottomNav';
+import Input from './pages/input';
 // Desktop
 import HomeDesk from "./pages/homeDesk";
 import NewsDesk from "./pages/newsDesk";
@@ -628,7 +629,7 @@ class App extends Component {
     return (
       <div className="App py-md-4 py-3" >
         {/* <HashRouter> */}
-        {/* <BottomNav> */}
+
         <Router >
           <Route exact={true} path="/" component={Home} />
           <Route exact={true} path="/news" render={() => (
@@ -652,7 +653,10 @@ class App extends Component {
             <Ebola ebola={this.state.ebola} />
           )} />
           <Route exact={true} path="/sars" render={() => (
-          <Sars sars={this.state.sars} />
+            <Sars sars={this.state.sars} />
+          )} />
+          <Route exact={true} path="/search" render={() => (
+            <Input prop={this.state} />
           )} />
 
           <Route exact={true} path="/profile" component={NewsPage} />
@@ -664,10 +668,8 @@ class App extends Component {
           <BottomNav />
         </Router>
 
-
         {/* Desktop */}
 
-        {/* </BottomNav>  */}
         {/* </HashRouter> */}
         <Router >
           <Switch>
