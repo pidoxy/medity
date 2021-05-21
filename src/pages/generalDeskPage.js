@@ -134,7 +134,7 @@ class GeneralDeskPage extends Component {
                                             <div className="p-3" style={{ backgroundColor: '#0085AD25', height: '100%' }}>
                                                 <p>Symptoms may appear 2-14 days after exposure</p>
                                                 {this.props.influenza.symptoms.map((symptom, id) =>
-                                                    <li>{symptom.text}</li>
+                                                    <li key={id}>{symptom.text}</li>
                                                 )}
                                             </div>
                                         </div>

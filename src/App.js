@@ -43,28 +43,32 @@ class App extends Component {
           img: "https://live.staticflickr.com/65535/51162301234_8261efc29a_t.jpg",
           code: 'COVID-19 ',
           color: "FF304F",
-          link: "/article1"
+          link: "/article1",
+          content: `As more people are vaccinated, many of us are increasingly \n looking toward a future at the end of the pandemic. \n But for some people, the long- term complications of the virus will last after the pandemic ends. \n \nNow over a year from the start of the pandemic, the scientific community is learning more about the long - term complications and effects of COVID - 19.  \n In a recent study published in the journal NatureTrusted Source, researchers found that individuals with more severe disease at the start of their illness have a greater risk of long- term complications such as heart and kidney disease secondary to COVID - 19. \n Symptoms more than 4 weeks after the onset web ma`
         },
         {
           text: 'US Health Authorities Ask for Pause in J&J COVID-19 Vaccination',
           img: "https://live.staticflickr.com/65535/51160852032_2038f5d532_t.jpg",
           code: 'COVID-19 ',
           color: "FF304F",
-          link: "/article5"
+          link: "/article5",
+          content: "As more people are vaccinated, many of us are increasingly \n looking toward a future at the end of the pandemic. \n But for some people, the long - term complications of the virus will last after the pandemic ends. \n Now over a year from the start of the pandemic, the scientific community is learning more about the long - term complications and effects of COVID - 19.\n In a recent study published in the journal NatureTrusted Source, researchers found that individuals with more severe disease at the start of their illness have a greater risk of long - term complications such as heart and kidney disease secondary to COVID - 19. \n Symptoms more than 4 weeks after the onset web ma"
         },
         {
           text: 'J&J COVID-19 Vaccinations Resume After Temporary Shutdowns',
           img: "https://live.staticflickr.com/65535/51162305254_c4898ab384_t.jpg",
           code: 'COVID-19 ',
           color: "FF304F",
-          link: "/article6"
+          link: "/article6",
+          content: "As more people are vaccinated, many of us are increasingly \n looking toward a future at the end of the pandemic.\n But for some people, the long - term complications of the virus will last after the pandemi \n Now over a year from the start of the pandemic, the scientific community is learning more about the long - term complications and effects of COVID  \n  In a recent study published in the journal NatureTrusted Source, researchers found that individuals with more severe disease at the start of their illness have a greater risk of long - term complications such as heart and kidney disease secondary to COVID  \n Symptoms more than 4 weeks after the onset web ma"
         },
         {
           text: 'Look for These Symptoms in the Months After COVID-19 Recovery',
           img: "https://live.staticflickr.com/65535/51161478191_7ffc78835e_t.jpg",
           code: 'SARS ',
           color: "FF304F",
-          link: "/article7"
+          link: "/article7",
+          content: "As more people are vaccinated, many of us are \n looking toward a future at the end of the pandemi \n But for some people, the long - term complications of the virus will last after the pandemic end \n Now over a year from the start of the pandemic, the scientific community is learning more about the long - term complications and effects of COVID - 1 \n  In a recent study published in the journal NatureTrusted Source, researchers found that individuals with more severe disease at the start of their illness have a greater risk of long - term complications such as heart and kidney disease secondary to COVID - 1 \n Symptoms more than 4 weeks after the onset web ma"
         },
 
         {
@@ -72,21 +76,24 @@ class App extends Component {
           code: 'Influenza',
           color: "39BDC8",
           img: "https://live.staticflickr.com/65535/51160852032_2038f5d532_t.jpg",
-          link: "/article2"
+          link: "/article2",
+          content: "As more people are vaccinated, many of us are increasingly \n looking toward a future at the end of the pandemic. \n But for some people, the long - term complications of the virus will last after the pandemic ends. \n Now over a year from the start of the pandemic, the scientific community is learning more about the long - term complications and effects of COVID - 19. \n  In a recent study published in the journal NatureTrusted Source, researchers found that individuals with more severe disease at the start of their illness have a greater risk of long - term complications such as heart and kidney disease secondary to COVID - 19. \n Symptoms more than 4 weeks after the onset web ma"
         },
         {
           text: 'Study highlights significant gap in evidence related to effectiveness of portable air filters in reducing COVID-19',
           code: 'Ebola',
           color: "0085AD",
           img: "https://live.staticflickr.com/65535/51162305254_c4898ab384_t.jpg",
-          link: "/article3"
+          link: "/article3",
+          content: "As more people are vaccinated, many of us are increasingly \n looking toward a future at the end of the pandemic. \n But for some people, the long - term complications of the virus will last after the pandemic ends. \n Now over a year from the start of the pandemic, the scientific community is learning more about the long - term complications and effects of COVID - 19. \n In a recent study published in the journal NatureTrusted Source, researchers found that individuals with more severe disease at the start of their illness have a greater risk of long - term complications such as heart and kidney disease secondary to COVID - 19. \n Symptoms more than 4 weeks after the onset web ma"
         },
         {
           text: 'Here’s Where COVID-19 Cases Are Rising and Falling',
           code: 'Cholera',
           color: "775ADA",
           img: "https://live.staticflickr.com/65535/51161478191_7ffc78835e_t.jpg",
-          link: "/article4"
+          link: "/article4",
+          content: "As more people are vaccinated, many of us are increasingly \n looking toward a future at the end of the pandemic. \n But for some people, the long - term complications of the virus will last after the pandemic ends. \n Now over a year from the start of the pandemic, the scientific community is learning more about the long - term complications and effects of COVID - 19. \n  In a recent study published in the journal NatureTrusted Source, researchers found that individuals with more severe disease at the start of their illness have a greater risk of long - term complications such as heart and kidney disease secondary to COVID - 19. \n Symptoms more than 4 weeks after the onset web ma"
         }
       ],
       blocks: [
