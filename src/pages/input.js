@@ -27,10 +27,7 @@ const App = ({ prop }) => {
                     else if (article.text.toLowerCase().includes(value) || article.code.toLowerCase().includes(value)) {
                         console.log(article.text);
                         return article;
-
-                    } else {
-                        return article
-                    }
+                    } 
                 }).map((items, id) =>
                     <Link key={id} to={items.link}><div style={{ cursor: "pointer" }} className="row py-3">
                         <div key={id} className="col-5"> <img style={{ width: "100%" }} src={items.img} alt={items.title} /></div>

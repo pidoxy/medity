@@ -14,7 +14,7 @@ class Home extends Component {
         const SearchPush = () => {
             let history = useHistory();
 
-            
+
             return (
                 <form className="d-flex">
 

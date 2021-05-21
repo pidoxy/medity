@@ -25,7 +25,7 @@ class Bar extends Component {
           }
 
         return (
-            <div className="px-3 py-3">
+            <div className="px-3 py-3 d-md-block d-none">
                 <div className="row">
                     <Rect />
                 </div>

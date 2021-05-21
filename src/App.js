@@ -665,7 +665,14 @@ class App extends Component {
           <Route exact={true} path="/article2" component={NewsPage2} />
           <Route exact={true} path="/article3" component={NewsPage3} />
           <Route exact={true} path="/article4" component={NewsPage4} />
+          <Route exact={true} path="/article5" component={NewsPage2} />
+          <Route exact={true} path="/article6" component={NewsPage3} />
+          <Route exact={true} path="/article7" component={NewsPage4} />
           <BottomNav />
+
+          <Route exact={true} path="/search" render={() => (
+            <Input prop={this.state} />
+          )} />
         </Router>
 
         {/* Desktop */}
@@ -694,7 +701,7 @@ class App extends Component {
             <Route exact={true} path="/team" render={() => (
               <Team general={this.state.general} articles={this.state.articles} blocks={this.state.blocks} />
             )} />
-            <Bar blocks={this.state.blocks} />
+            <Bar exact={true} blocks={this.state.blocks} />
           </Switch>
         </Router>
 
