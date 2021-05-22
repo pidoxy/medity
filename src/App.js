@@ -269,175 +269,119 @@ class App extends Component {
             text: "fever or chills and sweats"
           },
           {
-            text: "muscle or body aches"
-          },
-          {
-            text: "headache"
-          },
-          {
-            text: "Dry, persistent cough"
-          },
-          {
-            text: "shortness of breath or difficulty breathing"
-          },
-          {
-            text: "fatigue"
-          },
-          {
-            text: "congestion or runny nose"
+            text: "cough"
           },
           {
             text: "sore throat"
           },
           {
-            text: "new loss of taste or smell"
-          },
-          {
-            text: "Vomiting and diarrhea, but this is more common in children than adults"
-          },
-          {
-            text: "Eye pain"
-          },
-          {
-            text: "diarrhea"
-          },
-        ],
-
-        prevention: [
-          {
-            text: "Wash your hands. Washing your hands often with soap and water for at least 20 seconds is an effective way to prevent many common infections. Or use alcohol-based hand sanitizers if soap and water aren't available."
-          },
-          {
-            text: "Avoid touching your face.  Avoid touching your eyes, nose and mouth."
-          },
-          {
-            text: "get a vaccine"
-          },
-          {
-            text: "Cover your coughs and sneezes. Cough or sneeze into a tissue or your elbow. Then wash your hands."
-          },
-          {
-            text: "clean and disinfect frequently touched objects and surfaces daily"
-          },
-
-          {
-            text: "avoid crowds and poorly ventilated spaces"
-          },
-          {
-            text: "The flu spreads easily wherever people gather — in child care centers, schools, office buildings, auditoriums and public transportation. By avoiding crowds during peak flu season, you reduce your chances of infection. Also avoid anyone who is sick. And if you're sick, stay home for at least 24 hours after your fever is gone so that you lessen your chance of infecting others."
-          },
-        ]
-        ,
-
-        treatments: [
-          {
-            text: "Palliative care. Fluid replacement"
-          },
-          {
-            text: "Lifestyle drug. Bed rest and Throat lozenge"
-          },
-          {
-            text: "notify your health care provider when scheduling an appointment"
-          },
-          {
-            text: "Bed rest. Reducing activity for a short period of time following injury or illness to promote healing."
-
-          },
-          {
-            text: "Throat lozenge. Soothes sore throats."
-
-          },
-        ]
-
-      },
-      ebola: {
-
-        symptoms: [
-          {
-            text: "fever or chills"
-          },
-          {
-            text: "cough"
-          },
-          {
-            text: "shortness of breath or difficulty breathing"
-          },
-          {
-            text: "fatigue"
+            text: "runny or stuffy nose"
           },
           {
             text: "muscle or body aches"
           },
           {
-            text: "headache"
+            text: "heaadaches"
           },
           {
-            text: "new loss of taste or smell"
+            text: "fatigue"
           },
           {
-            text: " Later, a person may experience internal bleeding"
+            text: "vomiting and diarrhea, but this is more common in children than adults"
+          },
+        ],
+
+        prevention: [
+          {
+            text: "get the flu vaccine every year"
           },
           {
-            text: "congestion or runny nose"
+            text: "stay away from people who are sick"
           },
           {
-            text: "vomiting or coughing blood"
+            text: "cover coughs and sneezes"
           },
           {
-            text: "diarrhea"
+            text: "wash hands frequently"
+          },
+        ],
+
+        treatments: [
+          {
+            text: "stay home and rest"
+          },
+          {
+            text: "avoid contact with people"
+          },
+          {
+            text: "cover coughs and sneezes"
+          },
+          {
+            text: "wash hands frequently"
+          },
+          {
+            text: "for people with asthma, diabetes (including gestational diabetes), or heart disease, ask your doctor to prescribe antiviral drugs "
+          },
+        ]
+
+      },
+      ebola: {
+        symptoms: [
+          {
+            text: "fever"
+          },
+          {
+            text: "aches and pains, such as severe headache and muscle and joint pain"
+          },
+          {
+            text: "weakness and fatigue"
+          },
+          {
+            text: "sore throat"
+          },
+          {
+            text: "loss of appetite"
+          },
+          {
+            text: "gastrointestinal symptoms including abdominal pain, diarrhea, and vomiting"
+          },
+          {
+            text: "unexplained hemorrhaging, bleeding or bruising"
           },
         ]
         ,
 
         prevention: [
           {
-            text: "wear a mask with no gaps"
+            text: "avoid contact with blood and body fluids of those who are sick (such as urine, feces, saliva, sweat, vomit, breast milk, amniotic fluid, semen, and vaginal fluids)"
           },
           {
-            text: "stay at least 6 feet from others"
+            text: "avoid contact with items that may have come in contact with an infected person’s blood or body fluids (such as clothes, bedding, needles, and medical equipment)"
           },
           {
-            text: "avoid crowds and poorly ventilated spaces"
+            text: "avoid funeral or burial practices that involve touching the body of someone who died from EVD or suspect EVD"
           },
           {
-            text: "get a vaccine"
-          },
-          {
-            text: "clean your hands often"
-          },
-          {
-            text: "use soap and water for 20 seconds"
-          },
-          {
-            text: "or use hand sanitizer with 60% alcohol or more"
-          },
-          {
-            text: "clean and disinfect frequently touched objects and surfaces daily"
-          },
-          {
-            text: "congestion or runny nose"
-          },
-          {
-            text: "nausea or vomiting"
-          },
-          {
-            text: "diarrhea"
+            text: "avoid contact with bats, forest antelopes, and nonhuman primates (such as monkeys and chimpanzees) blood, fluids, or raw meat prepared from these or unknown animals (bushmeat)"
           },
         ]
         ,
 
         treatments: [
           {
-            text: "stay home and away from others except to get medical care"
+            text: "Immazeb and Ebanga are two FDA approved treatments"
           },
           {
-            text: "take acetaminophen or ibuprofen to feel better and reduce fever"
+            text: "provide fluids and electrolytes (body salts) orally or through infusion into the vein (intravenously)"
           },
           {
-            text: "notify your health care provider when scheduling an appointment"
+            text: "use medication to support blood pressure"
           },
           {
-            text: "nausea or vomiting"
+            text: "reduce vomiting and diarrhea"
+          },
+          {
+            text: "treat infections, if they occur"
           },
         ]
 
@@ -446,90 +390,57 @@ class App extends Component {
 
         symptoms: [
           {
-            text: "fever or chills"
+            text: "watery diarrhea"
           },
           {
-            text: "cough"
+            text: "vomiting"
           },
           {
-            text: "shortness of breath or difficulty breathing"
+            text: "leg cramps"
           },
           {
-            text: "fatigue"
+            text: "rapid loss of body fluids"
           },
           {
-            text: "muscle or body aches"
+            text: "dehydration"
           },
           {
-            text: "headache"
-          },
-          {
-            text: "new loss of taste or smell"
-          },
-          {
-            text: "sore throat"
-          },
-          {
-            text: "congestion or runny nose"
-          },
-          {
-            text: "nausea or vomiting"
-          },
-          {
-            text: "diarrhea"
+            text: "shock"
           },
         ]
         ,
 
         prevention: [
           {
-            text: "wear a mask with no gaps"
+            text: "drink only bottled, boiled, or chemically treated beverages and water"
           },
           {
-            text: "stay at least 6 feet from others"
+            text: "wash your hands often with soap and clean water, especially before you eat or prepare food and after using the bathroom"
           },
           {
-            text: "avoid crowds and poorly ventilated spaces"
+            text: "use bottled, boiled, or chemically treated water to wash dishes, brush teeth, wash and prepare food, and make ice"
           },
           {
-            text: "get a vaccine"
+            text: "eat foods that are packaged or that are freshly cooked and served hot"
           },
           {
-            text: "clean your hands often"
-          },
-          {
-            text: "use soap and water for 20 seconds"
-          },
-          {
-            text: "or use hand sanitizer with 60% alcohol or more"
-          },
-          {
-            text: "clean and disinfect frequently touched objects and surfaces daily"
-          },
-          {
-            text: "congestion or runny nose"
-          },
-          {
-            text: "nausea or vomiting"
-          },
-          {
-            text: "diarrhea"
+            text: "dispose of feces in a sanitary manner to prevent contamination of water and food sources"
           },
         ]
         ,
 
         treatments: [
           {
-            text: "stay home and away from others except to get medical care"
+            text: "replace fluids and salts that are lost through diarrhea"
           },
           {
-            text: "take acetaminophen or ibuprofen to feel better and reduce fever"
+            text: "use oral rehydration solution (ORS) – a prepackaged mixture of sugar and salts that is mixed with 1 liter of water and drunk in large amounts"
           },
           {
-            text: "notify your health care provider when scheduling an appointment"
+            text: "seek medical attention"
           },
           {
-            text: "nausea or vomiting"
+            text: "if an infant has watery diarrhea, continue breastfeeding"
           },
         ]
 
@@ -538,53 +449,32 @@ class App extends Component {
 
         symptoms: [
           {
-            text: "fever or chills"
-          },
-          {
-            text: "cough"
-          },
-          {
-            text: "shortness of breath or difficulty breathing"
-          },
-          {
-            text: "fatigue"
-          },
-          {
-            text: "muscle or body aches"
+            text: "high fever"
           },
           {
             text: "headache"
           },
           {
-            text: "new loss of taste or smell"
+            text: "overall discomfort"
           },
           {
-            text: "sore throat"
+            text: "body aches"
           },
           {
-            text: "congestion or runny nose"
+            text: "dry cough"
           },
           {
-            text: "nausea or vomiting"
-          },
-          {
-            text: "diarrhea"
+            text: "SARS patients may have diarrhea"
           },
         ]
         ,
 
         prevention: [
           {
-            text: "wear a mask with no gaps"
+            text: "avoid close person-to-person contact"
           },
           {
-            text: "stay at least 6 feet from others"
-          },
-          {
-            text: "avoid crowds and poorly ventilated spaces"
-          },
-          {
-            text: "get a vaccine"
+            text: "avoid kissing or hugging, sharing eating or drinking utensils, talking to someone within 3 feet, and touching someone directly"
           },
           {
             text: "clean your hands often"
@@ -598,31 +488,25 @@ class App extends Component {
           {
             text: "clean and disinfect frequently touched objects and surfaces daily"
           },
-          {
-            text: "congestion or runny nose"
-          },
-          {
-            text: "nausea or vomiting"
-          },
-          {
-            text: "diarrhea"
-          },
         ]
         ,
 
         treatments: [
           {
-            text: "stay home and away from others except to get medical care"
+            text: "Activated its Emergency Operations Center to provide round-the-clock coordination and response."
           },
           {
-            text: "take acetaminophen or ibuprofen to feel better and reduce fever"
+            text: "Committed more than 800 medical experts and support staff to work on the SARS response."
           },
           {
-            text: "notify your health care provider when scheduling an appointment"
+            text: "Provided assistance to state and local health departments in investigating possible cases of SARS in the United States."
           },
           {
-            text: "nausea or vomiting"
+            text: "Conducted extensive laboratory testing of clinical specimens from SARS patients to identify the cause of the disease."
           },
+          {
+            text: "Initiated a system for distributing health alert notices to travelers who may have been exposed to cases of SARS."
+          }
         ]
 
       }
