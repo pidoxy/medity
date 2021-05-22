@@ -25,7 +25,7 @@ const App = ({ prop }) => {
                     else if (article.text.toLowerCase().includes(value)) {
                         console.log(article.text);
                         return article;
-                    } 
+                    } return null;
                 }).map((items, id) => {
                     return (
                         <Link key={id} to={items.link}><div style={{ cursor: "pointer" }} className="row py-3">

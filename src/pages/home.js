@@ -18,7 +18,7 @@ class Home extends Component {
             return (
                 <form className="d-flex">
 
-                    {/* <input onFocus={() => history.push('/search')} className="mx-3 form-control " type="search" placeholder="Search" aria-label="Search" /> */}
+                    <input onFocus={() => history.push('/search')} className="mx-3 form-control " type="search" placeholder="Search" aria-label="Search" />
                 </form>
 
             )
