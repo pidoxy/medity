@@ -34,7 +34,7 @@ const ChartContainer = () => {
       //  console.log(rows[0].split(',')); // Table label
 
       for (let i = 1; i < rows.length; i++) {
-        const row = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+        // const row = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
         // const countryName = row[0];
         // console.log(countryName);
         // const confirmedCases = row[4];

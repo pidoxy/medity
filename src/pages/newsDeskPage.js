@@ -4,7 +4,7 @@ import news1 from "../images/news1.svg";
 
 
 
-class Home extends Component {
+class News extends Component {
 
     constructor(props) {
         super(props)
@@ -51,8 +51,8 @@ class Home extends Component {
                                             return article;
                                         } return null;
                                     }).map((items, id) =>
-                                        <div style={{ cursor: "pointer" }} className="row py-3">
-                                            <div key={id} className="col-5"> <img style={{ width: "100%" }} src={items.img} alt={items.title} /></div>
+                                        <div key={id} style={{ cursor: "pointer" }} className="row py-3">
+                                            <div className="col-5"> <img style={{ width: "100%" }} src={items.img} alt={items.title} /></div>
                                             <div className="col-7">
                                                 <li style={{ color: `#${items.color}`, fontWeight: "700" }} className="card-text fw-bold">{items.code}</li>
                                                 <p>{items.text}</p>
@@ -62,9 +62,9 @@ class Home extends Component {
                                     }
                                 </div>
 
-                                {this.props.articles.map((items, id) =>
+                                <div className="py-2" style={{ maxHeight: '45rem', overflowY: 'auto', overflowX: 'hidden' }}>{this.props.articles.map((items, id) =>
 
-                                    <div onClick={() => {
+                                    <div key={id} onClick={() => {
                                         if (id === 0) {
                                             this.setState({ section0Clicked: true });
                                             this.setState({ section1Clicked: false });
@@ -138,11 +138,11 @@ class Home extends Component {
                                         </div>
                                     </div>
 
-                                )}
+                                )}</div>
                             </div>
                         </div>
-                        {this.state.section0Clicked && (<div  className="p-2 col-7">
-                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '80%'}} className="container p-5">
+                        {this.state.section0Clicked && (<div className="p-2 col-7">
+                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '100%' }} className="container p-5">
                                 <div className="row">
                                     <div className="col-7">
                                         <h1 style={{ color: `#${this.props.articles[0].color}`, fontWeight: "700" }} className="py-4 card-text fw-bolder">{this.props.articles[0].code}</h1>
@@ -154,17 +154,17 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div>
-                                    <p style={{fontSize: '20px'}}>{this.props.articles[0].content}</p>
+                                    <p style={{ fontSize: '20px' }}>{this.props.articles[0].content}</p>
                                 </div>
                             </div>
                         </div>)}
 
                         {this.state.section1Clicked && (<div className="col-7 p-2">
-                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '80%'}} className="container p-5">
+                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '100%' }} className="container p-5">
                                 <div className="row">
                                     <div className="col-7">
                                         <h1 style={{ color: `#${this.props.articles[1].color}`, fontWeight: "700" }} className="py-4 card-text fw-bolder">{this.props.articles[1].code}</h1>
-                                        <p style={{ color: `#${this.props.articles[1].color}`, fontSize: '24px'}}>{this.props.articles[1].text}</p>
+                                        <p style={{ color: `#${this.props.articles[1].color}`, fontSize: '24px' }}>{this.props.articles[1].text}</p>
                                         <p style={{ color: "#C4C4C4" }}>by Pidoxy</p>
                                     </div>
                                     <div className="col-5">
@@ -172,12 +172,12 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div>
-                                    <p style={{fontSize: '20px'}}>{this.props.articles[1].content}</p>
+                                    <p style={{ fontSize: '20px' }}>{this.props.articles[1].content}</p>
                                 </div>
                             </div>
                         </div>)}
                         {this.state.section2Clicked && (<div className="col-7 p-2">
-                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '80%'}} className="container p-5">
+                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '100%' }} className="container p-5">
                                 <div className="row">
                                     <div className="col-7">
                                         <h1 style={{ color: `#${this.props.articles[2].color}`, fontWeight: "700" }} className="py-4 card-text fw-bolder">{this.props.articles[2].code}</h1>
@@ -189,12 +189,12 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div>
-                                    <p style={{fontSize: '20px'}}>{this.props.articles[2].content}</p>
+                                    <p style={{ fontSize: '20px' }}>{this.props.articles[2].content}</p>
                                 </div>
                             </div>
                         </div>)}
                         {this.state.section3Clicked && (<div className="col-7 p-2">
-                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '80%'}} className="container p-5">
+                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '100%' }} className="container p-5">
                                 <div className="row">
                                     <div className="col-7">
                                         <h1 style={{ color: `#${this.props.articles[3].color}`, fontWeight: "700" }} className="py-4 card-text fw-bolder">{this.props.articles[3].code}</h1>
@@ -206,13 +206,13 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div>
-                                    <p style={{fontSize: '20px'}}>{this.props.articles[3].content}</p>
+                                    <p style={{ fontSize: '20px' }}>{this.props.articles[3].content}</p>
                                 </div>
                             </div>
                         </div>)}
 
                         {this.state.section4Clicked && (<div className="col-7 p-2">
-                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '80%'}} className="container p-5">
+                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '100%' }} className="container p-5">
                                 <div className="row">
                                     <div className="col-7">
                                         <h1 style={{ color: `#${this.props.articles[4].color}`, fontWeight: "700" }} className="py-4 card-text fw-bolder">{this.props.articles[4].code}</h1>
@@ -224,12 +224,12 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div>
-                                    <p style={{fontSize: '20px'}}>{this.props.articles[4].content}</p>
+                                    <p style={{ fontSize: '20px' }}>{this.props.articles[4].content}</p>
                                 </div>
                             </div>
                         </div>)}
                         {this.state.section5Clicked && (<div className="col-7 p-2">
-                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '80%'}} className="container p-5">
+                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '100%' }} className="container p-5">
                                 <div className="row">
                                     <div className="col-7">
                                         <h1 style={{ color: `#${this.props.articles[5].color}`, fontWeight: "700" }} className="py-4 card-text fw-bolder">{this.props.articles[5].code}</h1>
@@ -241,12 +241,12 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div>
-                                    <p style={{fontSize: '20px'}}>{this.props.articles[5].content}</p>
+                                    <p style={{ fontSize: '20px' }}>{this.props.articles[5].content}</p>
                                 </div>
                             </div>
                         </div>)}
                         {this.state.section6Clicked && (<div className="col-7 p-2">
-                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '80%'}} className="container p-5">
+                            <div style={{ boxShadow: '1px 4px 4px 2px rgba(0, 0, 0, 0.25)', minHeight: '100%' }} className="container p-5">
                                 <div className="row">
                                     <div className="col-7">
                                         <h1 style={{ color: `#${this.props.articles[6].color}`, fontWeight: "700" }} className="py-4 card-text fw-bolder">{this.props.articles[6].code}</h1>
@@ -258,7 +258,7 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div>
-                                    <p style={{fontSize: '20px'}}>{this.props.articles[6].content}</p>
+                                    <p style={{ fontSize: '20px' }}>{this.props.articles[6].content}</p>
                                 </div>
                             </div>
                         </div>)}
@@ -269,7 +269,7 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default News;
 
 
 

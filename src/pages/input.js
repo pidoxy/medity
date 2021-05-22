@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import BackImg from '../components/backImg';
 
 
-const App = ({ prop }) => {
+const App = (props) => {
 
     const [value, setValue] = useState("");
+    console.log(props.prop);
 
     return (
         <div className="notification pb-5 d-md-none">
@@ -16,7 +17,7 @@ const App = ({ prop }) => {
                 </div>
             </div>
             <div className="px-3">
-                {prop.articles.filter((article) => {
+                {props.prop.articles.filter((article) => {
                     if (value === "") {
                         console.log(article.text);
 

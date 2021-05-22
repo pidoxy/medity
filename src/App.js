@@ -522,7 +522,9 @@ class App extends Component {
         {/* <HashRouter> */}
 
         <Router >
-          <Route exact={true} path="/" component={Home} />
+          <Route exact={true} path="/" render={() => (
+            <Home prop={this.state} articles={this.state.articles} />
+          )} />
           <Route exact={true} path="/news" render={() => (
             <News articles={this.state.articles} />
           )} />
@@ -546,9 +548,6 @@ class App extends Component {
           <Route exact={true} path="/sars" render={() => (
             <Sars sars={this.state.sars} />
           )} />
-          <Route exact={true} path="/search" render={() => (
-            <Input prop={this.state} />
-          )} />
 
           <Route exact={true} path="/profile" component={NewsPage} />
           <Route exact={true} path="/notification" component={Notification} />
@@ -563,7 +562,7 @@ class App extends Component {
 
           <Route exact={true} path="/search" render={() => (
             <Input prop={this.state} />
-          )} />
+           )} />
         </Router>
 
         {/* Desktop */}
@@ -572,7 +571,7 @@ class App extends Component {
         <Router >
           <Switch>
             <Route exact={true} path="/" render={() => (
-              <HomeDesk blocks={this.state.blocks} />
+              <HomeDesk prop={this.state} blocks={this.state.blocks} />
             )} />
             <Route exact={true} path="/features" render={() => (
               <NewsDesk blocks={this.state.blocks} />
@@ -593,6 +592,9 @@ class App extends Component {
               <Team general={this.state.general} articles={this.state.articles} blocks={this.state.blocks} />
             )} />
             <Bar exact={true} blocks={this.state.blocks} />
+            
+            <Input exact={true} prop={this.state} />
+           
           </Switch>
         </Router>
 
