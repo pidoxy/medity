@@ -8,12 +8,12 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import TopNav from "../components/topNav";
 import {
     Card,
-    CardHeader,
-    CardTitle,
+    // CardHeader,
+    // CardTitle,
     CardBody,
     CardActions,
     // CardImage,
-    CardSubtitle,
+    // CardSubtitle,
 } from "@progress/kendo-react-layout";
 
 
