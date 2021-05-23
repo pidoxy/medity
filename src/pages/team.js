@@ -18,15 +18,15 @@ class Home extends Component {
                     <div >
                         <img src={Emmanuel} alt="team member" />
                         <p className="pt-3" style={{ fontSize: '25px' }}>Emmanuel Idoko</p>
-                        <a target="_blank" href="https://www.linkedin.com/in/emmanuelidoko/"><img src={LinkedIn} alt="LinkedIn icon" /></a>
-                        <a target="_blank" href="https://twitter.com/pidoxy_"><img src={Twitter} alt="Twitter icon" /></a>
+                        <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/emmanuelidoko/"><img src={LinkedIn} alt="LinkedIn icon" /></a>
+                        <a rel="noreferrer" target="_blank" href="https://twitter.com/pidoxy_"><img src={Twitter} alt="Twitter icon" /></a>
 
                     </div>
                     <div>
                         <img src={Emmanuel} alt="team member" />
                         <p className="pt-3" style={{ fontSize: '25px' }}>Erica Fu</p>
-                        <a target="_blank" href="https://www.linkedin.com/in/emmanuelidoko/"><img src={LinkedIn} alt="LinkedIn icon" /></a>
-                        <a target="_blank" href="https://twitter.com/pidoxy_"><img src={Twitter} alt="Twitter icon" /></a>
+                        <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/emmanuelidoko/"><img src={LinkedIn} alt="LinkedIn icon" /></a>
+                        <a rel="noreferrer" target="_blank" href="https://twitter.com/pidoxy_"><img src={Twitter} alt="Twitter icon" /></a>
 
                     </div>
                 </div>
