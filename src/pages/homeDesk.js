@@ -6,8 +6,6 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import TopNav from "../components/topNav";
-import Emmanuel from "../images/emmanuel.svg";
-import LinkedIn from "../images/LinkedIn.svg";
 import {
     Card,
     // CardHeader,
@@ -17,6 +15,7 @@ import {
     // CardImage,
     // CardSubtitle,
 } from "@progress/kendo-react-layout";
+import Team from '../pages/team';
 
 
 class Home extends Component {
@@ -63,7 +62,7 @@ class Home extends Component {
                                                 } return null;
                                             }).map((items, id) => {
                                                 return (
-                                                    <Link key={id} to={items.link}><div style={{ cursor: "pointer" }} className="row py-3">
+                                                    <Link key={id} to="/features/news"><div style={{ cursor: "pointer" }} className="row py-3">
                                                         <div key={id} className="col-5"> <img style={{ width: "100%" }} src={items.img} alt={items.title} /></div>
                                                         <div className="col-7">
                                                             <li style={{ color: `#${items.color}`, fontWeight: "700" }} className="card-text fw-bold">{items.code}</li>
@@ -165,24 +164,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="green text-center mt-3 py-5">
-                    <h3 className="pt-4 pb-2 white">The Team</h3>
-                    <h5 >Team Piderica</h5>
-                    <div className="d-flex justify-content-around ">
-                        <div >
-                            <img src={Emmanuel} alt="team member" />
-                            <p className="pt-3" style={{fontSize: '25px'}}>Emmanuel Idoko</p>
-                            <img src={LinkedIn} alt="LinkedIn icon" />
-
-                        </div>
-                        <div>
-                            <img src={Emmanuel} alt="team member" />
-                            <p className="pt-3" style={{fontSize: '25px'}}>Erica Fu</p>
-                            <img className="text-center" src={LinkedIn} alt="LinkedIn icon" />
-
-                        </div>
-                    </div>
-                </div>
+                <Team />
             </div>
         );
     }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Input } from '@progress/kendo-react-inputs';
 // import { Link } from "react-router-dom";
 import TopNav from "../components/topNav";
 
@@ -15,7 +14,12 @@ class GeneralDeskPage extends Component {
             section1Clicked: false,
             section2Clicked: false,
             section3Clicked: false,
-            backgroundColor: 'white'
+            // backgroundColor0: '#E5E5E5',
+            backgroundColor: 'white',
+            // backgroundColor2: 'white',
+            // backgroundColor3: 'white'
+
+
         }
 
 
@@ -42,9 +46,8 @@ class GeneralDeskPage extends Component {
 
                     <div className="row ">
                         <div className="col-3">
-                            <h4 className="fw-bolder  px-3">Latest News</h4>
+                            {/* <h4 className="fw-bolder  px-3">Latest News</h4> */}
                             <div className="container articles">
-                                <Input />
 
                                 {this.props.general.map((todo, id) =>
                                     <div onClick={() => {
@@ -53,26 +56,29 @@ class GeneralDeskPage extends Component {
                                             this.setState({ section1Clicked: false });
                                             this.setState({ section2Clicked: false });
                                             this.setState({ section3Clicked: false });
+
                                         }
                                         else if (id === 1) {
                                             this.setState({ section0Clicked: false });
                                             this.setState({ section1Clicked: true });
                                             this.setState({ section2Clicked: false });
                                             this.setState({ section3Clicked: false });
-                                            // this.state.section1Clicked ? this.setState({backgroundColor: '#E5E5E5'})  : this.setState({backgroundColor: 'white'}) 
+
                                         }
                                         else if (id === 2) {
                                             this.setState({ section0Clicked: false });
                                             this.setState({ section1Clicked: false });
                                             this.setState({ section2Clicked: true });
                                             this.setState({ section3Clicked: false });
-                                            // this.state.section2Clicked ? this.setState({backgroundColor: '#E5E5E5'})  : this.setState({backgroundColor: 'white'}) 
+
                                         }
                                         else if (id === 3) {
                                             this.setState({ section0Clicked: false });
                                             this.setState({ section1Clicked: false });
                                             this.setState({ section2Clicked: false });
                                             this.setState({ section3Clicked: true });
+                                            this.state.section3Clicked ? (this.setState({ backgroundColor: '#E5E5E5' })) : (this.setState({ backgroundColor: 'white' }))
+
                                             // this.state.section3Clicked ? this.setState({backgroundColor: '#E5E5E5'})  : this.setState({backgroundColor: 'white'}) 
                                         }
                                        

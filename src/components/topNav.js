@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom';
 
 const items = [
     { text: 'HOME', id: 1, route: '/' },
-    { text: 'FEATURES', id: 2, route: '/features' },
-    { text: 'TEAM', id: 3, route: '/team' },
-    { text: 'CONTACT US', id: 4, route: '/contact-us' }
+    { text: 'FEATURES', id: 2, route: '/features' }
+    // { text: 'TEAM', id: 3, route: '#team' },
+    // { text: 'CONTACT US', id: 4, route: '/contact-us' }
 ];
 
 const TopNav = () => {
@@ -26,15 +26,11 @@ const TopNav = () => {
 
             <AppBarSection className="ms-auto">
                 {items.map((item, id) =>
-                    // <ul>
-                    <li className="px-2 px-lg-4 topnav-links" key={id} ><span><NavLink key={item.id} to={item.route} >{item.text}</NavLink></span></li>
-                    //     <li className="px-2 px-lg-4" id="#home"><span>HOME</span></li>
-                    //     <li className="px-2 px-lg-4" id="#home"><span>FEATURES</span></li>
-                    //     <li className="px-2 px-lg-4" id="#home"><span>TEAM</span></li>
-                    //     <li className="px-2 px-lg-4" id="#home"><span>CONTACT US</span></li>
+                    <li className="px-2 px-lg-4 topnav-links" key={id} ><span><NavLink href={item.route} key={item.id} to={item.route} >{item.text}</NavLink></span></li>
 
-                    // </ul>
                 )}
+                <li className="px-2 px-lg-4" ><span><a href="#team">TEAM</a></span></li>
+                <li className="px-2 px-lg-4"><span><a href="#contact">CONTACT US</a></span></li>
             </AppBarSection>
             <AppBarSpacer style={{
                 width: 40

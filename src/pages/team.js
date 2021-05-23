@@ -1,31 +1,36 @@
 import React, { Component } from 'react';
 // import { Input } from '@progress/kendo-react-inputs';
-import TopNav from "../components/topNav";
-
+import Emmanuel from "../images/emmanuel.svg";
+import LinkedIn from "../images/LinkedIn.svg";
+import Twitter from "../images/Twitter.svg";
 
 
 class Home extends Component {
 
     render() {
         return (
-            <div id="#features" className="App pt-5">
-                <TopNav />
-                <div className="container pt-5 px-4 text-center ">
-                    <h1 className="px-5 f-3">Taking data and info to the uttermost<br /> parts of the globe</h1>
-                    <p className="dark-grey py-5 "><span className="black" >Medity</span> conveniently categorizes and organizes informations so users can quickly access the information they are looking for. By using KendoReact to collect data, Medity is able to display real-time news and updates so that information is accurate and up-to-date.</p>
+            <div id="team" className="green text-center mt-5 py-5">
+                <div className="pb-5 pt-3">
+                    <h3 className="pt-5 mt-3 pb-5 white">The Team</h3>
+                    <h5 className="pt-3 pb-5">Team Piderica</h5>
                 </div>
-                <div className="px-3 py-3">
-                    <div className="row">
-                        {this.props.blocks.map((items, id) => <div style={{backgroundColor:`${items.color}`}} className="py-3 px-5 col-4 text-center" key={id}>
-                            <h1 className="py-5" style={{color:'white'}}>{items.title}</h1>
-                            <p className="py-5" style={{fontSize:'20px'}}>{items.text}</p>
-                            </div>)}
+                <div className="d-flex mb-5 pb-5 justify-content-around ">
+                    <div >
+                        <img src={Emmanuel} alt="team member" />
+                        <p className="pt-3" style={{ fontSize: '25px' }}>Emmanuel Idoko</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/emmanuelidoko/"><img src={LinkedIn} alt="LinkedIn icon" /></a>
+                        <a target="_blank" href="https://twitter.com/pidoxy_"><img src={Twitter} alt="Twitter icon" /></a>
+
+                    </div>
+                    <div>
+                        <img src={Emmanuel} alt="team member" />
+                        <p className="pt-3" style={{ fontSize: '25px' }}>Erica Fu</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/emmanuelidoko/"><img src={LinkedIn} alt="LinkedIn icon" /></a>
+                        <a target="_blank" href="https://twitter.com/pidoxy_"><img src={Twitter} alt="Twitter icon" /></a>
+
                     </div>
                 </div>
-
-
-
-            </div >
+            </div>
         );
     }
 }

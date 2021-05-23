@@ -25,7 +25,6 @@ import NewsDesk from "./pages/newsDesk";
 import NewsDeskPage from './pages/newsDeskPage';
 import GeneralDeskPage from './pages/generalDeskPage';
 import RegulationsDeskPage from './pages/regulationDeskPage';
-import Team from './pages/team';
 import ContactUs from './pages/contactUs';
 import Bar from "./components/bar";
 
@@ -587,10 +586,7 @@ class App extends Component {
             )} />
             <Route exact={true} path="/contact-us" render={() => (
               <ContactUs general={this.state.general} articles={this.state.articles} blocks={this.state.blocks} />
-            )} />
-            <Route exact={true} path="/team" render={() => (
-              <Team general={this.state.general} articles={this.state.articles} blocks={this.state.blocks} />
-            )} />
+            )} />         
             <Bar exact={true} blocks={this.state.blocks} />
             
             <Input exact={true} prop={this.state} />
