@@ -518,7 +518,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App py-md-4 py-3" >
+      <div className="App pt-md-4 pb-md-0 py-3" >
         {/* <HashRouter> */}
 
         <Router >
@@ -574,7 +574,7 @@ class App extends Component {
               <HomeDesk prop={this.state} blocks={this.state.blocks} />
             )} />
             <Route exact={true} path="/features" render={() => (
-              <NewsDesk blocks={this.state.blocks} />
+              <NewsDesk  blocks={this.state.blocks} />
             )} />
             <Route exact={true} path="/features/news" render={() => (
               <NewsDeskPage articles={this.state.articles} blocks={this.state.blocks} />

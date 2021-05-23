@@ -6,6 +6,8 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import TopNav from "../components/topNav";
+import Emmanuel from "../images/emmanuel.svg";
+import LinkedIn from "../images/LinkedIn.svg";
 import {
     Card,
     // CardHeader,
@@ -39,7 +41,7 @@ class Home extends Component {
                 <div>
                     <div className="k-card-group" style={{ display: "flex", justifyContent: "space-evenly" }} >
                         <div style={{ width: "30%" }} className="k-card-list" >
-                            <Card style={{ maxHeight: '500px' }} orientation="vertical">
+                            <Card style={{ maxHeight: '700px' }} orientation="vertical">
                                 <div className="k-vbox">
 
                                     <CardBody>
@@ -108,7 +110,7 @@ class Home extends Component {
                                             <h4 className="fw-bolder">General Information</h4>
                                             <p>Learn more about:</p>
                                             <div className="row">{this.props.prop.general.map((items, id) => <div key={id} className="m-3 col-5 card-shadow p-3" style={{ cursor: "pointer", color: 'white', backgroundColor: `#${items.color}` }} >
-                                                <Link key={id} to={items.route}>
+                                                <Link key={id} to="/features/general">
                                                     <div className="">
                                                         <p className="mb-0 fw-bold">{items.code}</p>
                                                     </div>
@@ -127,7 +129,7 @@ class Home extends Component {
                                         <CardBody>
                                             <h4 className="fw-bolder">Recent Articles</h4>
 
-                                            <OwlCarousel className='owl-theme py-3' autoplay loop margin={10} items={2.5} dots={false} >
+                                            <OwlCarousel className='owl-theme py-3' autoplay loop margin={10} items={2.3} dots={false} >
                                                 {this.props.prop.articles.map((items, id) =>
                                                     <div key={id} className='item'>
                                                         <img src={items.img} alt={items.title} />
@@ -143,12 +145,12 @@ class Home extends Component {
                                     <div>
 
                                         <CardBody>
-                                            <h4 className="fw-bolder">Regional Regulations</h4>
-                                            <p>Find COVID-19 vaccines and tests near you:</p>
-                                            <p>Understand the rules and regulations</p>
+                                            <h4 className="fw-bolder py-2">Regional Regulations</h4>
+                                            <p className="py-2 fw-bolder">Find COVID-19 vaccines and tests near you:</p>
+                                            <p className="py-2 fw-bolder">Understand the rules and regulations</p>
 
                                             <div className="row">{this.props.prop.regulators.map((items, id) => <div key={id} className="m-3 col-5 card-shadow p-3" style={{ cursor: "pointer", color: 'white', backgroundColor: `#${items.color}` }} >
-                                                <Link key={id} to={items.route}>
+                                                <Link key={id} to="/features/regulations">
                                                     <div className="">
                                                         <p className="mb-0 fw-bold">{items.code}</p>
                                                     </div>
@@ -163,7 +165,24 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="green text-center mt-3 py-5">
+                    <h3 className="pt-4 pb-2 white">The Team</h3>
+                    <h5 >Team Piderica</h5>
+                    <div className="d-flex justify-content-around ">
+                        <div >
+                            <img src={Emmanuel} alt="team member" />
+                            <p className="pt-3" style={{fontSize: '25px'}}>Emmanuel Idoko</p>
+                            <img src={LinkedIn} alt="LinkedIn icon" />
 
+                        </div>
+                        <div>
+                            <img src={Emmanuel} alt="team member" />
+                            <p className="pt-3" style={{fontSize: '25px'}}>Erica Fu</p>
+                            <img className="text-center" src={LinkedIn} alt="LinkedIn icon" />
+
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

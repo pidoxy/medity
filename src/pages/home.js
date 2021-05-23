@@ -4,7 +4,7 @@ import covid from "../images/covid.svg";
 import influenza from "../images/influenza.svg";
 import others from "../images/others.svg";
 import vaccine from "../images/vaccine.svg";
-// import ChartContainer from "../components/chart";
+import ChartContainer from "../components/chart";
 import { Link, useHistory } from "react-router-dom";
 
 class Home extends Component {
@@ -36,7 +36,7 @@ class Home extends Component {
                         <SearchPush />
                     </div>
 
-                    {/* <ChartContainer /> */}
+                    <ChartContainer />
 
                     <div className="container">
                         <h1 className="fw-bolder">Popular Topics</h1>
