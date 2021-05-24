@@ -2,13 +2,12 @@ import * as React from 'react';
 import { AppBar, AppBarSection, AppBarSpacer } from '@progress/kendo-react-layout';
 // import { Badge, BadgeContainer } from '@progress/kendo-react-indicators';
 import { NavLink } from 'react-router-dom';
+import Logo from '../images/logo.svg'
 
 
 const items = [
     { text: 'HOME', id: 1, route: '/' },
     { text: 'FEATURES', id: 2, route: '/features' }
-    // { text: 'TEAM', id: 3, route: '#team' },
-    // { text: 'CONTACT US', id: 4, route: '/contact-us' }
 ];
 
 const TopNav = () => {
@@ -19,7 +18,7 @@ const TopNav = () => {
             }} />
 
             <AppBarSection >
-                <h3 style={{ color: 'white' }} className="title">Medity(app logo)</h3>
+                <img style={{ width: '20%' }} src={Logo} alt="logo" /><h3 style={{ color: 'white' }} className="px-1 title">Medity</h3>
             </AppBarSection>
             <AppBarSpacer />
             <AppBarSpacer />
