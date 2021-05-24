@@ -10,7 +10,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div id="team" className="green text-center mt-5 py-5">
+            <div id="team" className="green text-center mt-5 pt-5">
                 <div className="pb-5 pt-3">
                     <h2 className="pt-5 mt-3 pb-5 white">The Team</h2>
                 </div>
@@ -28,6 +28,10 @@ class Home extends Component {
                         <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/erica-fu-15b3a61b9/"><img src={LinkedIn} alt="LinkedIn icon" /></a>
 
                     </div>
+                </div>
+                <div className="py-3">
+                {/* <hr style={{borderTopColor: 'white'}}/> */}
+                    <p style={{borderTopColor: 'white', color: 'white', fontSize: '22px'}} className="text-center">With <span style={{color: 'red', fontSize: '100%'}}>♥</span> from Team Medity</p>
                 </div>
             </div>
         );

@@ -85,8 +85,7 @@ class Home extends Component {
 
                                         <CardBody>
                                             <h4><strong>Reach out to Medity!</strong></h4>
-                                            <p><a href="#team">The Team</a></p>
-                                            <p><a href="#contact">Contact Us</a></p>
+                                            <p className="py-2"><a href="#team">The Team</a></p>
                                         </CardBody>
                                     </div>
                                 </Card>

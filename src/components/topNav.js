@@ -29,7 +29,6 @@ const TopNav = () => {
 
                 )}
                 <li className="px-2 px-lg-4" ><span><a href="#team">TEAM</a></span></li>
-                <li className="px-2 px-lg-4"><span><a href="#contact">CONTACT US</a></span></li>
             </AppBarSection>
             <AppBarSpacer style={{
                 width: 40
