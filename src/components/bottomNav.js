@@ -5,10 +5,9 @@ import { BottomNavigation } from '@progress/kendo-react-layout';
 
 
 const items = [
-    { text: 'General', id: 1, icon: `inbox`, route: '/', selected: true },
+    { text: 'Home', id: 1, icon: `inbox`, route: '/', selected: true },
     { text: 'News', id: 2, icon: 'calendar', route: '/news' },
-    { text: 'Info', id: 3, icon: 'cogs', route: '/calendr' },
-    { text: 'Profile', id: 4, icon: 'user', route: '/profile' }
+    { text: 'Info', id: 3, icon: 'cogs', route: '/features/general' },
 ];
 
 class BottomNav extends React.Component {
@@ -27,7 +26,7 @@ class BottomNav extends React.Component {
         let selected = this.setSelectedItem(this.props.location.pathname);
 
         return (
-          <div className={'example-wrapper'}>
+          <div className={'example-wrapper d-md-none'} >
             <div className={'page'}>
               <div className={'content'}>
 

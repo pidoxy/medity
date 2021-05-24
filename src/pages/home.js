@@ -4,20 +4,27 @@ import covid from "../images/covid.svg";
 import influenza from "../images/influenza.svg";
 import others from "../images/others.svg";
 import vaccine from "../images/vaccine.svg";
-// import { Input } from '@progress/kendo-react-inputs';
 import ChartContainer from "../components/chart";
-import { Link } from "react-router-dom";
-import axios from 'axios';
-
-
+import { Link, useHistory } from "react-router-dom";
 
 class Home extends Component {
 
-    
 
     render() {
+        const SearchPush = () => {
+            let history = useHistory();
+
+
+            return (
+                <form className="d-flex">
+                    <input onFocus={() => history.push('/search')} className="mx-3 form-control " type="search" placeholder="Search" aria-label="Search" />
+                </form>
+
+            )
+        }
+
         return (
-            <div className="App ">
+            <div className="App d-md-none">
                 <div className="container ">
                     <div className="px-3 d-flex justify-content-between">
                         <h1 className="fw-bolder">Hey there!</h1>
@@ -25,10 +32,8 @@ class Home extends Component {
                     </div>
                     <div className="px-3 py-3">
                         <p>What would you like to know today?</p>
-                        {/* <Input /> */}
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        </form>
+
+                        <SearchPush />
                     </div>
 
                     <ChartContainer />
@@ -37,22 +42,30 @@ class Home extends Component {
                         <h1 className="fw-bolder">Popular Topics</h1>
                         <div className="row">
                             <div className="col-3">
-                                <img src={covid} alt="covid icon" />
-                                <p>Covid</p>
+                                <Link to="/search" >
+                                    <img src={covid} alt="covid icon" />
+                                    <p>Covid</p>
+                                </Link>
                             </div>
                             <div className="col-3">
-                                <img src={vaccine} alt="vaccine icon" />
-                                <p>Vaccine</p>
+                                <Link to="/search">
+                                    <img src={vaccine} alt="vaccine icon" />
+                                    <p>Vaccine</p>
+                                </Link>
 
                             </div>
                             <div className="col-3">
-                                <img src={influenza} alt="influenza icon" />
-                                <p>Influenza</p>
+                                <Link to="/search">
+                                    <img src={influenza} alt="influenza icon" />
+                                    <p>Influenza</p>
+                                </Link>
 
                             </div>
                             <div className="col-3">
-                                <img src={others} alt="others icon" />
-                                <p>Others</p>
+                                <Link to="/search">
+                                    <img src={others} alt="others icon" />
+                                    <p>Others</p>
+                                </Link>
 
                             </div>
                         </div>

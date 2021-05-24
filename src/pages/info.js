@@ -1,46 +1,16 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 // import { Card, CardTitle, CardBody, CardActions } from '@progress/kendo-react-layout';
 // import history from './history';
 
 
-class Notifications extends React.Component {
+class Info extends React.Component {
 
     constructor(props) {
         super(props)
 
         this.state = {
-            todos: [
-                {
-                    // id: uuidv4(),
-                    code: 'COVID-19 ',
-                    color:"FF304F",
 
-                },
-                {
-                    // id: uuidv4(),
-                    code: 'Influenza',
-                    color:"39BDC8",
-
-                },
-                {
-                    // id: uuidv4(),
-                    code: 'Ebola',
-                    color:"0085AD",
-
-                },
-                {
-                    // id: uuidv4(),
-                    code: 'Cholera',
-                    color:"775ADA",
-
-                },
-                {
-                    // id: uuidv4(),
-                    code: 'SARS',
-                    color:"FF304F",
-
-                }
-            ]
         }
 
 
@@ -49,26 +19,29 @@ class Notifications extends React.Component {
     render() {
 
         return (
-            <div className="notification py-3">
+            <div className="notification py-3 d-md-none">
                 <div className="container pt-3 pb-5">
                     <h1 className="text-center fw-bolder pb-2">General Information</h1>
                     <p className="text-center">Click to learn more about symptoms, prevention, and treatments for the following diseases.</p>
                 </div>
                 <div className="container">
                     <div className="px-3">
-                        {this.state.todos.map((todo, id) =>
-                            <div key={id} className="card card-shadow mb-3" style={{ cursor: "pointer", color:`#${todo.color}` }} >
+                        {this.props.general.map((todo, id) =>
+
+                            <div key={id} className="card card-shadow mb-3" style={{ cursor: "pointer", color: `#${todo.color}` }} >
+                                <Link key={id} to={todo.route}>
                                 <div className="card-body">
                                     <li className="card-text fw-bold">{todo.code}</li>
 
                                 </div>
+                                </Link>
                             </div>
                         )}
                     </div>
-                </div>
             </div>
+            </div >
         )
     }
 }
 
-export default Notifications;
+export default Info;
