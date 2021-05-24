@@ -2,13 +2,12 @@ import * as React from 'react';
 import { AppBar, AppBarSection, AppBarSpacer } from '@progress/kendo-react-layout';
 // import { Badge, BadgeContainer } from '@progress/kendo-react-indicators';
 import { NavLink } from 'react-router-dom';
+import Logo from '../images/logo.svg'
 
 
 const items = [
     { text: 'HOME', id: 1, route: '/' },
-    { text: 'FEATURES', id: 2, route: '/features' },
-    { text: 'TEAM', id: 3, route: '/team' },
-    { text: 'CONTACT US', id: 4, route: '/contact-us' }
+    { text: 'FEATURES', id: 2, route: '/features' }
 ];
 
 const TopNav = () => {
@@ -19,22 +18,17 @@ const TopNav = () => {
             }} />
 
             <AppBarSection >
-                <h3 style={{ color: 'white' }} className="title">Medity(app logo)</h3>
+                <img style={{ width: '20%' }} src={Logo} alt="logo" /><h3 style={{ color: 'white' }} className="px-1 title">Medity</h3>
             </AppBarSection>
             <AppBarSpacer />
             <AppBarSpacer />
 
             <AppBarSection className="ms-auto">
                 {items.map((item, id) =>
-                    // <ul>
-                    <li className="px-2 px-lg-4 topnav-links" key={id} ><span><NavLink key={item.id} to={item.route} >{item.text}</NavLink></span></li>
-                    //     <li className="px-2 px-lg-4" id="#home"><span>HOME</span></li>
-                    //     <li className="px-2 px-lg-4" id="#home"><span>FEATURES</span></li>
-                    //     <li className="px-2 px-lg-4" id="#home"><span>TEAM</span></li>
-                    //     <li className="px-2 px-lg-4" id="#home"><span>CONTACT US</span></li>
+                    <li className="px-2 px-lg-4 topnav-links" key={id} ><span><NavLink href={item.route} key={item.id} to={item.route} >{item.text}</NavLink></span></li>
 
-                    // </ul>
                 )}
+                <li className="px-2 px-lg-4" ><span><a href="#team">TEAM</a></span></li>
             </AppBarSection>
             <AppBarSpacer style={{
                 width: 40

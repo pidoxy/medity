@@ -1,31 +1,39 @@
 import React, { Component } from 'react';
 // import { Input } from '@progress/kendo-react-inputs';
-import TopNav from "../components/topNav";
-
+import Emmanuel from "../images/emmanuel.svg";
+import Erica from "../images/erica.svg";
+import LinkedIn from "../images/LinkedIn.svg";
+import Twitter from "../images/Twitter.svg";
 
 
 class Home extends Component {
 
     render() {
         return (
-            <div id="#features" className="App pt-5">
-                <TopNav />
-                <div className="container pt-5 px-4 text-center ">
-                    <h1 className="px-5 f-3">Taking data and info to the uttermost<br /> parts of the globe</h1>
-                    <p className="dark-grey py-5 "><span className="black" >Medity</span> conveniently categorizes and organizes informations so users can quickly access the information they are looking for. By using KendoReact to collect data, Medity is able to display real-time news and updates so that information is accurate and up-to-date.</p>
+            <div id="team" className="green text-center mt-5 pt-5">
+                <div className="pb-5 pt-3">
+                    <h2 className="pt-5 mt-3 pb-5 white">The Team</h2>
                 </div>
-                <div className="px-3 py-3">
-                    <div className="row">
-                        {this.props.blocks.map((items, id) => <div style={{backgroundColor:`${items.color}`}} className="py-3 px-5 col-4 text-center" key={id}>
-                            <h1 className="py-5" style={{color:'white'}}>{items.title}</h1>
-                            <p className="py-5" style={{fontSize:'20px'}}>{items.text}</p>
-                            </div>)}
+                <div className="d-flex mb-5 pb-5 justify-content-around ">
+                    <div >
+                        <img src={Emmanuel} alt="team member" />
+                        <p className="pt-3" style={{ fontSize: '25px' }}>Emmanuel Idoko</p>
+                        <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/emmanuelidoko/"><img src={LinkedIn} alt="LinkedIn icon" /></a>
+                        <a rel="noreferrer" target="_blank" href="https://twitter.com/pidoxy_"><img src={Twitter} alt="Twitter icon" /></a>
+
+                    </div>
+                    <div>
+                        <img src={Erica} alt="team member" />
+                        <p className="pt-3" style={{ fontSize: '25px' }}>Erica Fu</p>
+                        <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/erica-fu-15b3a61b9/"><img src={LinkedIn} alt="LinkedIn icon" /></a>
+
                     </div>
                 </div>
-
-
-
-            </div >
+                <div className="py-3">
+                {/* <hr style={{borderTopColor: 'white'}}/> */}
+                    <p style={{borderTopColor: 'white', color: 'white', fontSize: '22px'}} className="text-center">With <span style={{color: 'red', fontSize: '100%'}}>♥</span> from Team Medity</p>
+                </div>
+            </div>
         );
     }
 }

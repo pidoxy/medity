@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 class Home extends Component {
-
+    
     render() {
         return (
             <div id="#features" className="App pt-5 d-md-block d-none">
