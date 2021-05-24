@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 
 class Notifications extends React.Component {
 
+
     render() {
         const Img = () => {
             let history = useHistory();
@@ -28,13 +29,13 @@ class Notifications extends React.Component {
                 </div>
                 <div>
                     <div>
-                        <img style={{ width: '100%' }} src={this.props.prop.articles[1].img} alt="news article" />
+                        <img style={{ width: '100%' }} src={this.props.prop.articles[6].img} alt="news article" />
                         <div className="container">
-                            <li style={{ color: `#${this.props.prop.articles[1].color}`, fontWeight: "700" }} className="py-4 card-text fw-bolder">{this.props.prop.articles[1].code}</li>
-                            <p style={{ color: `#${this.props.prop.articles[1].color}` }}>{this.props.prop.articles[1].text}</p>
+                            <li style={{ color: `#${this.props.prop.articles[6].color}`, fontWeight: "700" }} className="py-4 card-text fw-bolder">{this.props.prop.articles[6].code}</li>
+                            <p style={{ color: `#${this.props.prop.articles[6].color}` }}>{this.props.prop.articles[6].text}</p>
                             <p style={{ color: "#C4C4C4" }}>by Pidoxy</p>
                             <div>
-                                <p>{this.props.prop.articles[1].content}</p>
+                                <p>{this.props.prop.articles[6].content}</p>
                             </div>
                         </div>
                     </div>
