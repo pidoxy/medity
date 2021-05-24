@@ -8,7 +8,6 @@ const items = [
     { text: 'Home', id: 1, icon: `inbox`, route: '/', selected: true },
     { text: 'News', id: 2, icon: 'calendar', route: '/news' },
     { text: 'Info', id: 3, icon: 'cogs', route: '/features/general' },
-    { text: 'Profile', id: 4, icon: 'user', route: '/profile' }
 ];
 
 class BottomNav extends React.Component {

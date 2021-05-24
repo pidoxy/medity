@@ -42,22 +42,30 @@ class Home extends Component {
                         <h1 className="fw-bolder">Popular Topics</h1>
                         <div className="row">
                             <div className="col-3">
-                                <img src={covid} alt="covid icon" />
-                                <p>Covid</p>
+                                <Link to="/search" >
+                                    <img src={covid} alt="covid icon" />
+                                    <p>Covid</p>
+                                </Link>
                             </div>
                             <div className="col-3">
-                                <img src={vaccine} alt="vaccine icon" />
-                                <p>Vaccine</p>
+                                <Link to="/search">
+                                    <img src={vaccine} alt="vaccine icon" />
+                                    <p>Vaccine</p>
+                                </Link>
 
                             </div>
                             <div className="col-3">
-                                <img src={influenza} alt="influenza icon" />
-                                <p>Influenza</p>
+                                <Link to="/search">
+                                    <img src={influenza} alt="influenza icon" />
+                                    <p>Influenza</p>
+                                </Link>
 
                             </div>
                             <div className="col-3">
-                                <img src={others} alt="others icon" />
-                                <p>Others</p>
+                                <Link to="/search">
+                                    <img src={others} alt="others icon" />
+                                    <p>Others</p>
+                                </Link>
 
                             </div>
                         </div>

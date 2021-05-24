@@ -57,7 +57,7 @@ const ChartContainer = () => {
   return (
       <div className="k-card">
         <Chart className="chart">
-          <ChartTitle text="Countries" />
+          <ChartTitle text="Covid" />
           <ChartCategoryAxis>
             <ChartCategoryAxisItem className='rotate' categories={countries} title={{ text: 'Countries' }} />
           </ChartCategoryAxis>
